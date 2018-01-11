@@ -41,3 +41,39 @@ schema (database shape)
         * auth0_id
 
     
+
+
+auth0 -steps
+
+create Client singlePage Application
+
+
+
+Snippet	Prefix
+React
+Statefull Component	sfc
+Stateless Component	slc
+Redux Component	reduxComponent
+componentWillMount	cwm
+componentDidMount	cdm
+componentWillReceiveProps	cwrp
+shouldComponentUpdate	scu
+componentWillUpdate	cwu
+componentDidUpdate	cdu
+componentWillUnmount	cwum
+constructor	constructor
+binding Method	bindMethod
+state	state
+setState	setState
+props	props
+propTypes	pt
+Redux
+mapStateToProps	mstp
+mapDispatchToProps	mdtp
+connect	connect
+reducer	reducer
+action	action
+actionType	actionType
+
+
+
