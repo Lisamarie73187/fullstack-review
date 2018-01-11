@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 
 
@@ -14,7 +15,8 @@ class AccountInfo extends Component {
         return (
             <div>
                 <h1>AccountInfo</h1>
-                <p>you are logged in as: {this.props.user.name}</p>
+                {this.props.user && <p>You are logged in as <strong>{this.props.user.name}</strong></p>}
+                {!this.props.user && <p>you must login <Link to="/">Log In</Link></p> }
             </div>
         )
     }
