@@ -11,12 +11,10 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+                Home
             </div>
         )
     }
 }
-
-
 
 export default Home
