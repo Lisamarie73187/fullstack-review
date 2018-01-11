@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+
 
 
 class AccountInfo extends Component {
@@ -12,10 +14,17 @@ class AccountInfo extends Component {
         return (
             <div>
                 <h1>AccountInfo</h1>
+                <p>you are logged in as: {this.props.user.name}</p>
             </div>
         )
     }
 }
 
+const mapStateToProps = state => {
+    return {
+        user: state.user
+    }
+}
 
-export default AccountInfo
+
+export default connect(mapStateToProps)(AccountInfo)
