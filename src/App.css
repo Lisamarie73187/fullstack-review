@@ -1,0 +1,14 @@
+.layout{
+  text-align: center;
+  padding: 100px;
+}
+
+button{
+  margin: 50px;
+  padding: 9px 19px;
+  cursor: pointer;
+  font-size: 17pt;
+  border-radius: 10%;
+  outline: none;
+  box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.43);  
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import logo from './communityBank.svg'
 
 
 class Home extends Component {
@@ -8,10 +9,15 @@ class Home extends Component {
         }
     }
 
+    login (){
+        
+    }
+
     render() {
         return (
-            <div>
-                Home
+            <div className="layout">
+                <div><img src={logo} alt="logo" width="300px"/></div>
+                <button onClick={this.login}>Log In</button>
             </div>
         )
     }
